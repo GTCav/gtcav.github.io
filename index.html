@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Menu Lateral Simples</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      display: flex;
+    }
+
+    /* Estilo do menu lateral */
+    .menu-lateral {
+      width: 200px;
+      height: 100vh;
+      background-color: #2c3e50;
+      padding-top: 20px;
+      position: fixed;
+    }
+
+    .menu-lateral a {
+      display: block;
+      padding: 15px 20px;
+      color: #ecf0f1;
+      text-decoration: none;
+      transition: background 0.3s;
+    }
+
+    .menu-lateral a:hover {
+      background-color: #34495e;
+    }
+
+    /* Conteúdo principal */
+    .conteudo {
+      margin-left: 200px;
+      padding: 20px;
+      flex: 1;
+    }
+  </style>
+</head>
+<body>
+
+  <nav class="menu-lateral">
+    <a href="#">Início</a>
+    <a href="#">Sobre</a>
+    <a href="#">Serviços</a>
+    <a href="#">Contato</a>
+  </nav>
+
+  <div class="conteudo">
+    <h1>Bem-vindo!</h1>
+    <p>Este é um exemplo de layout com menu lateral e efeito hover.</p>
+  </div>
+
+</body>
+</html>
